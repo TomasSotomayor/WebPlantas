@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,27 +11,38 @@
     <style>
         /* Estilos para el espacio entre la barra superior y el carrusel */
         .navbar-spacer {
-            height: 50px; /* Ajusta la altura del espacio */
+            height: 50px;
+            /* Ajusta la altura del espacio */
         }
 
         /* Estilos para las categorías */
         .navbar-categories {
-            background-color: #f8f9fa; /* Color de fondo */
-            border-top: 1px solid #dee2e6; /* Borde superior */
-            padding: 10px 0; /* Espaciado interior */
+            background-color: #f8f9fa;
+            /* Color de fondo */
+            border-top: 1px solid #dee2e6;
+            /* Borde superior */
+            padding: 10px 0;
+            /* Espaciado interior */
         }
+
         .navbar-categories a {
-            color: #495057; /* Color del texto */
-            padding: 0 10px; /* Espaciado horizontal entre elementos */
-            text-decoration: none; /* Quita el subrayado */
+            color: #495057;
+            /* Color del texto */
+            padding: 0 10px;
+            /* Espaciado horizontal entre elementos */
+            text-decoration: none;
+            /* Quita el subrayado */
         }
 
         .navbar {
-            max-width: 100%; /* Ajusta el ancho máximo */
-            margin: 0 auto; /* Centra la barra de navegación */
+            max-width: 100%;
+            /* Ajusta el ancho máximo */
+            margin: 0 auto;
+            /* Centra la barra de navegación */
         }
     </style>
 </head>
+
 <body>
     <header>
         <!-- Barra de navegación superior con logo -->
@@ -38,23 +50,22 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.html">
-                        <!-- Añade la clase img-fluid al logo -->
                         <img src="img/logo/logo.png" style="max-width:100%;height:auto;" alt="Logo" width="100">
                     </a>
                 </div>
+                <!-- Menú desplegable en la esquina superior derecha -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p>¡Hola, [User Name]!</p>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Cerrar sesión</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            
-            <!-- Menú desplegable en la esquina superior derecha -->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ¡Hola Ivan!
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Cerrar sesión</a>
-                    </div>
-                </li>
-            </ul>
         </nav>
         <!-- Espacio entre la barra superior y el carrusel -->
         <div class="navbar-spacer"></div>

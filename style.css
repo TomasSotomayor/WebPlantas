@@ -21,7 +21,7 @@ body {
 
 p {
     color: rgb(255, 255, 255);
-    font-style: oblique;
+    font-style:normal;
 }
 
 .carousel-inner {
