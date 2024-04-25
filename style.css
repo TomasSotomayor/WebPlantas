@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(199, 199, 199);
+}
+
+.navbar-taller {
+    background-color: rgb(85, 47, 47);
+    color: rgb(255, 236, 152);
+    border-color: black;
+    padding: 10px 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar-header {
+    padding: 10px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+}
