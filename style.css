@@ -23,3 +23,7 @@ p {
     color: rgb(255, 255, 255);
     font-style: oblique;
 }
+
+.carousel-inner {
+    background-color: black;
+}
