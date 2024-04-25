@@ -3,7 +3,7 @@ body {
 }
 
 .navbar-taller {
-    background-color: rgb(63, 58, 58);
+    background-color: rgb(62, 62, 62);
     color: rgb(255, 236, 152);
     border-color: black;
     padding: 10px 0;
@@ -19,11 +19,30 @@ body {
     padding: 10px;
 }
 
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #aa1212;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 p {
     color: rgb(255, 255, 255);
-    font-style: oblique;
+    font-style:normal;
 }
 
 .carousel-inner {
     background-color: black;
+}
+
+.max-height-600 {
+    max-height: 600px; /* Puedes ajustar este valor según tus necesidades */
 }
