@@ -7,9 +7,28 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Agrega el enlace al archivo CSS de Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos para el espacio entre la barra superior y el carrusel */
+        .navbar-spacer {
+            height: 50px; /* Ajusta la altura del espacio */
+        }
+
+        /* Estilos para las categorías */
+        .navbar-categories {
+            background-color: #f8f9fa; /* Color de fondo */
+            border-top: 1px solid #dee2e6; /* Borde superior */
+            padding: 10px 0; /* Espaciado interior */
+        }
+        .navbar-categories a {
+            color: #495057; /* Color del texto */
+            padding: 0 10px; /* Espaciado horizontal entre elementos */
+            text-decoration: none; /* Quita el subrayado */
+        }
+    </style>
 </head>
 <body>
     <header>
+        <!-- Barra de navegación superior con logo -->
         <nav class="navbar navbar-taller">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -20,47 +39,61 @@
                 </div>
             </div>
         </nav>
+        <!-- Espacio entre la barra superior y el carrusel -->
+        <div class="navbar-spacer"></div>
+        <!-- Categorías -->
+        <nav class="navbar-categories">
+            <div class="container">
+                <a href="#">Categorías</a>
+                <a href="#">Contacto</a>
+                <a href="#">Nosotros</a>
+            </div>
+        </nav>
     </header>
+    <!-- Carrusel -->
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <!-- Añade la clase img-fluid a las imágenes del carrusel -->
-            <img src="img/cars/carrusel.jpg" class="d-block w-100 img-fluid" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+            <div class="carousel-item active">
+                <!-- Añade la clase img-fluid a las imágenes del carrusel -->
+                <div style="display: flex; justify-content: center;">
+                    <img src="img/cars/carrusel.jpg" style="max-width:100%;height:auto;" alt="Trabajo 1" width="600">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                
+                    <h5>Mecánico automotriz</h5>
+                    <p>asdasdas</p>
+                </div>
             </div>
-          </div>
-          <!-- Añade las clases img-fluid a las imágenes restantes del carrusel -->
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100 img-fluid" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+            <!-- Añade las clases img-fluid a las imágenes restantes del carrusel -->
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100 img-fluid" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
             </div>
-          </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
-      </div>
+    </div>
     <!-- Agrega el enlace al archivo JavaScript de Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
