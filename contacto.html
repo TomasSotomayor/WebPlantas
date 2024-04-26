@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TALLER MECÁNICO | CONTACTO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-GrE9Uvu7WmVeK4Rj7LbMfm4Y9eHvvJGqeUmPa2KZQJKqCeUbK/m1P4uAu5NjEbx7XgzSdKDqKn1TmVYAwV6f1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación superior con logo -->
+        <nav class="navbar navbar-taller">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo/logo.png" style="max-width:100%;height:auto;" alt="Logo" width="100">
+                    </a>
+                </div>
+                <div class="search-bar ml-auto d-flex justify-content-between"> <!-- Añadiendo las clases d-flex y justify-content-between aquí -->
+                    <input type="text" placeholder="Buscar...">
+                    <button type="submit" class="ml-2">Buscar</button> <!-- Moviendo el botón de búsqueda aquí y añadiendo la clase ml-2 -->
+                </div>
+                <!-- Menú desplegable en la esquina superior derecha -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p>¡Hola, [Username]!</p>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Cerrar sesión</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Categorías -->
+        <nav class="navbar-categories">
+            <div class="container d-flex justify-content-between">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMecanicos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mecánicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMecanicos">
+                        <!-- Aquí puedes agregar los enlaces del menú desplegable para Mecánicos -->
+                        <a class="dropdown-item" href="#">Mecánico automotriz</a>
+                        <a class="dropdown-item" href="#">experto en 
+    equipos eléctricos</a>
+                        <a class="dropdown-item" href="#">Ventas y 
+    atención al cliente</a>
+                        <!-- Agrega más elementos según sea necesario -->
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownCategorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categorías
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownCategorias">
+                        <!-- Aquí puedes agregar los enlaces del menú desplegable para Categorías -->
+                        <a class="dropdown-item" href="#">Categoría 1</a>
+                        <a class="dropdown-item" href="#">Categoría 2</a>
+                        <!-- Agrega más elementos según sea necesario -->
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownContacto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contacto
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownContacto">
+                        <!-- Aquí puedes agregar los enlaces del menú desplegable para Contacto -->
+                        <a class="dropdown-item" href="#">Información de contacto</a>
+                        <a class="dropdown-item" href="#">Formulario de contacto</a>
+                        <!-- Agrega más elementos según sea necesario -->
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownSobreNosotros" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sobre nosotros
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownSobreNosotros">
+                        <!-- Aquí puedes agregar los enlaces del menú desplegable para Sobre nosotros -->
+                        <a class="dropdown-item" href="#">Quiénes somos</a>
+                        <a class="dropdown-item" href="#">Misión y visión</a>
+                        <!-- Agrega más elementos según sea necesario -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container cont-contact">
+        <img src="img/mech/Jesse1.0.jpg" height="700px">
+    </div>
+    
+</body>
+</html>
