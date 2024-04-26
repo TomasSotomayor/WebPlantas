@@ -41,6 +41,18 @@
         .nav-link.dropdown-toggle {
             color: white; /* Cambia el color del texto a blanco */
         }
+
+        /* Estilos para las imágenes de las categorías */
+        .category {
+            text-align: center;
+            margin-top: 20px; /* Espaciado superior */
+        }
+
+        .category img {
+            max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+            height: auto; /* Ajusta la altura automáticamente */
+            margin-bottom: 20px; /* Espaciado inferior */
+        }
     </style>
 </head>
 
@@ -73,57 +85,57 @@
             </div>
         </nav>
         <!-- Categorías -->
-<nav class="navbar-categories">
-    <div class="container d-flex justify-content-between">
-        <div class="dropdown">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownMecanicos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Mecánicos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMecanicos">
-                <!-- Aquí puedes agregar los enlaces del menú desplegable para Mecánicos -->
-                <a class="dropdown-item" href="#">Mecánico automotriz</a>
-                <a class="dropdown-item" href="#">experto en 
+        <nav class="navbar-categories">
+            <div class="container d-flex justify-content-between">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMecanicos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mecánicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMecanicos">
+                        <!-- Aquí puedes agregar los enlaces del menú desplegable para Mecánicos -->
+                        <a class="dropdown-item" href="#">Mecánico automotriz</a>
+                        <a class="dropdown-item" href="#">experto en 
 equipos eléctricos</a>
-                <a class="dropdown-item" href="#">Ventas y 
+                        <a class="dropdown-item" href="#">Ventas y 
 atención al cliente</a>
-                <!-- Agrega más elementos según sea necesario -->
+                        <!-- Agrega más elementos según sea necesario -->
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownCategorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categorías
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownCategorias">
+                        <!-- Aquí puedes agregar los enlaces del menú desplegable para Categorías -->
+                        <a class="dropdown-item" href="#">Categoría 1</a>
+                        <a class="dropdown-item" href="#">Categoría 2</a>
+                        <!-- Agrega más elementos según sea necesario -->
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownContacto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contacto
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownContacto">
+                        <!-- Aquí puedes agregar los enlaces del menú desplegable para Contacto -->
+                        <a class="dropdown-item" href="#">Información de contacto</a>
+                        <a class="dropdown-item" href="#">Formulario de contacto</a>
+                        <!-- Agrega más elementos según sea necesario -->
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownSobreNosotros" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sobre nosotros
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownSobreNosotros">
+                        <!-- Aquí puedes agregar los enlaces del menú desplegable para Sobre nosotros -->
+                        <a class="dropdown-item" href="#">Quiénes somos</a>
+                        <a class="dropdown-item" href="#">Misión y visión</a>
+                        <!-- Agrega más elementos según sea necesario -->
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="dropdown">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownCategorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Categorías
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownCategorias">
-                <!-- Aquí puedes agregar los enlaces del menú desplegable para Categorías -->
-                <a class="dropdown-item" href="#">Categoría 1</a>
-                <a class="dropdown-item" href="#">Categoría 2</a>
-                <!-- Agrega más elementos según sea necesario -->
-            </div>
-        </div>
-        <div class="dropdown">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownContacto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Contacto
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownContacto">
-                <!-- Aquí puedes agregar los enlaces del menú desplegable para Contacto -->
-                <a class="dropdown-item" href="#">Información de contacto</a>
-                <a class="dropdown-item" href="#">Formulario de contacto</a>
-                <!-- Agrega más elementos según sea necesario -->
-            </div>
-        </div>
-        <div class="dropdown">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownSobreNosotros" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sobre nosotros
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownSobreNosotros">
-                <!-- Aquí puedes agregar los enlaces del menú desplegable para Sobre nosotros -->
-                <a class="dropdown-item" href="#">Quiénes somos</a>
-                <a class="dropdown-item" href="#">Misión y visión</a>
-                <!-- Agrega más elementos según sea necesario -->
-            </div>
-        </div>
-    </div>
-</nav> 
+        </nav> 
     </header>
     <!-- Carrusel -->
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -135,20 +147,20 @@ atención al cliente</a>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <!-- Añade la clase img-fluid a las imágenes del carrusel -->
-                <img src="img/cars/carrusel.jpg" class="d-block img-fluid max-height-600" alt="Trabajo 1">
+                <img src="img/cars/carrusel.jpg" class="d-block img-fluid max-height-700" alt="Trabajo 1">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Limpieza general</h5>
                 </div>
             </div>
             <!-- Añade las clases img-fluid a las imágenes restantes del carrusel -->
             <div class="carousel-item">
-                <img src="img/cars/mantenimiento_neumaticos.jpg" class="d-block img-fluid max-height-600" alt="Trabajo 2">
+                <img src="img/cars/mantenimiento_neumaticos.jpg" class="d-block img-fluid max-height-700" alt="Trabajo 2">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Mantenimiento de neumáticos</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/cars/reparacion_neumatico.png" class="d-block img-fluid max-height-600" alt="Trabajo 3">
+                <img src="img/cars/reparacion_neumatico.png" class="d-block img-fluid max-height-700" alt="Trabajo 3">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Reparación de neumático</h5>
                 </div>
@@ -163,9 +175,34 @@ atención al cliente</a>
             <span class="sr-only">Next</span>
         </a>
     </div>
+
+    <!-- Imágenes separadas del carrusel -->
     <div class="container">
-        <div class="row"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="category">
+                    <img src="img/mech/Toretto 2.0.png" alt="Categoría 1">
+                    <h3>Dominic Toretto</h3>
+                    <h5>Mecánico de ventas y atención al cliente</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category">
+                    <img src="img/mech/Jesse 2.0.png" alt="Categoría 2">
+                    <h3>Jesse Lindberg</h3>
+                    <h5>Mecánico automotriz</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category">
+                    <img src="img/mech/Jimmy 2.0.png" alt="Categoría 3">
+                    <h3>Jimmy Au-Yeung</h3>
+                    <h5>Mecánico de equipos eléctricos</h5>
+                </div>
+            </div>
+        </div>
     </div>
+
     <!-- Agrega el enlace al archivo JavaScript de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
