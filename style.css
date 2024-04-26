@@ -22,7 +22,8 @@ body {
 .search-bar input[type="text"] {
     padding: 8px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    width: 200%
 }
 
 .search-bar button {
