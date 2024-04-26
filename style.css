@@ -49,6 +49,7 @@ body {
 /* Estilos para el recuadro de imagen y texto */
 .image-text-box {
     border: 1px solid rgb(190, 190, 190);
+    color: rgb(190, 190, 190);
     padding: 20px;
     margin-top: 20px;
     background-color: rgb(60, 60, 60);
