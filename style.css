@@ -44,6 +44,10 @@ p {
     background-color: black;
 }
 
+.carousel img {
+    margin: 0 auto;
+}
+
 .max-height-600 {
     max-height: 600px; /* Puedes ajustar este valor según tus necesidades */
 }
