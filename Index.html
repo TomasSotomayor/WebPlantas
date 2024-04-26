@@ -53,6 +53,16 @@
             height: auto; /* Ajusta la altura automáticamente */
             margin-bottom: 20px; /* Espaciado inferior */
         }
+
+        /* Estilos para el contenedor scrollable */
+        .scrollable-container {
+            max-height: 400px; /* Altura máxima del contenedor */
+            overflow-y: scroll; /* Habilita la barra de desplazamiento vertical */
+            overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+            border: 1px solid #ccc; /* Borde del contenedor */
+            padding: 50px; /* Espaciado interior del contenedor */
+            margin-top: 20px; /* Espaciado superior */
+        }
     </style>
 </head>
 
@@ -175,9 +185,8 @@ atención al cliente</a>
             <span class="sr-only">Next</span>
         </a>
     </div>
-
-    <!-- Imágenes separadas del carrusel -->
-    <div class="container">
+    <!-- Contenedor con barra de desplazamiento para imágenes separadas del carrusel -->
+    <div class="container scrollable-container">
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="category">
@@ -188,6 +197,7 @@ atención al cliente</a>
             </div>
             <div class="col-md-4">
                 <div class="category">
+                    <h2 class="overlay-text">Mecánicos</h2>
                     <img src="img/mech/Jesse 2.0.png" alt="Categoría 2">
                     <h3>Jesse Lindberg</h3>
                     <h5>Mecánico automotriz</h5>
@@ -202,6 +212,7 @@ atención al cliente</a>
             </div>
         </div>
     </div>
+    
 
     <!-- Agrega el enlace al archivo JavaScript de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
