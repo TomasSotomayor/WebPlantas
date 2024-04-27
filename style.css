@@ -46,6 +46,11 @@ body {
     display: block;
 }
 
+.footer {
+    background-color: rgb(60, 60, 60);
+    color: rgb(190,190,190);
+}
+
 /* Estilos para el recuadro de imagen y texto */
 .image-text-box {
     border: 1px solid rgb(190, 190, 190);
@@ -125,6 +130,8 @@ p {
     max-height: 400px; /* Altura máxima del contenedor */
     overflow-y: scroll; /* Habilita la barra de desplazamiento vertical */
     overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+    background-color: rgb(60, 60, 60);
+    color: rgb(190, 190, 190);
     border: 1px solid rgb(190, 190, 190);; /* Borde del contenedor */
     padding: 50px; /* Espaciado interior del contenedor */
     margin-top: 20px; /* Espaciado superior */
