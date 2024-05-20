@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maceteros</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-GrE9Uvu7WmVeK4Rj7LbMfm4Y9eHvvJGqeUmPa2KZQJKqCeUbK/m1P4uAu5NjEbx7XgzSdKDqKn1TmVYAwV6f1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Estilos personalizados para la página de maceteros */
+        /* Puedes agregar estilos adicionales aquí */
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Barra de navegación superior con logo -->
+        <nav class="navbar navbar-taller">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo/logo.png" style="max-width:100%;height:auto;" alt="Logo" width="100">
+                    </a>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                </ul>
+                <div class="search-bar ml-auto d-flex justify-content-between">
+                    <input type="text" placeholder="Buscar...">
+                    <button type="submit" class="ml-2">Buscar</button>
+                </div>
+                <!-- Menú desplegable en la esquina superior derecha -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="registro.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button type="button" class="btn btn-primary">Iniciar sesión</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Categorías -->
+
+    
+    <!-- Contenido principal de la página de maceteros -->
+    <nav class="navbar-categories">
+        <div class="container d-flex justify-content-between">
+            <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMecanicos" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Maceteros
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMecanicos">
+                    <!-- Aquí puedes agregar los enlaces del menú desplegable para Mecánicos -->
+                    <a class="dropdown-item" href="#">Mecánico automotriz</a>
+                    <a class="dropdown-item" href="#">Experto en equipos eléctricos</a>
+                    <a class="dropdown-item" href="#">Ventas y atención al cliente</a>
+                    <!-- Agrega más elementos según sea necesario -->
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownCategorias" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Tierra de hojas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownCategorias">
+                    <!-- Aquí puedes agregar los enlaces del menú desplegable para Categorías -->
+                    <a class="dropdown-item" href="#">Categoría 1</a>
+                    <a class="dropdown-item" href="#">Categoría 2</a>
+                    <!-- Agrega más elementos según sea necesario -->
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownFlores" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Flores
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownFlores">
+                    <!-- Aquí puedes agregar los enlaces del menú desplegable para Flores -->
+                    <a class="dropdown-item" href="#">Quiénes somos</a>
+                    <a class="dropdown-item" href="#">Misión y visión</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownArbustos" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Arbustos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownArbustos">
+                    <!-- Aquí puedes agregar los enlaces del menú desplegable para Arbustos -->
+                    <a class="dropdown-item" href="#">Arbusto 1</a>
+                    <a class="dropdown-item" href="#">Arbusto 2</a>
+                    <!-- Agrega más elementos según sea necesario -->
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropdown-toggle" href="contacto.html" role="button" id="dropdownContacto"
+                    aria-haspopup="true" aria-expanded="false">
+                    Contacto
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownContacto">
+                    <!-- Aquí puedes agregar los enlaces del menú desplegable para Contacto -->
+                    <a class="dropdown-item" href="contacto.html">Información de contacto</a>
+                    <a class="dropdown-item" href="contacto.html">Formulario de contacto</a>
+                    <!-- Agrega más elementos según sea necesario -->
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Aquí puedes agregar información de contacto o enlaces adicionales -->
+                <div class="col-md-6">
+                    <h3>Contacto</h3>
+                    <p>Dirección: Av. Principal 123, Ciudad, País</p>
+                    <p>Teléfono: +1234567890</p>
+                    <p>Email: info@tallermecanico.com</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <!-- Puedes agregar más enlaces aquí -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
