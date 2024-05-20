@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="validaciones.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-GrE9Uvu7WmVeK4Rj7LbMfm4Y9eHvvJGqeUmPa2KZQJKqCeUbK/m1P4uAu5NjEbx7XgzSdKDqKn1TmVYAwV6f1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            background: linear-gradient(to bottom, #98FB98, #FFFFE0, #8B4513); /* Gradiente verde, amarillo y café */
+            background: linear-gradient(to bottom, #98FB98, #FFFFE0, #8B4513);
+            /* Gradiente verde, amarillo y café */
             margin: 0;
             font-family: Arial, sans-serif;
         }
+
         #registroForm {
             border: 2px solid green;
             padding: 20px;
             border-radius: 5px;
-            background-color: #FFFFE0; /* Color amarillo claro */
+            background-color: #FFFFE0;
+            /* Color amarillo claro */
             max-width: 400px;
             margin: 50px auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        #registroForm input[type="text"], 
-        #registroForm input[type="number"], 
+
+        #registroForm input[type="text"],
+        #registroForm input[type="number"],
         #registroForm select {
-            background-color: #98FB98; /* Color verde claro */
+            background-color: #98FB98;
+            /* Color verde claro */
             border: 1px solid #ccc;
             padding: 10px;
             margin: 10px 0;
             width: calc(100% - 22px);
         }
+
         #registroForm button {
-            background-color: #8B4513; /* Color café */
+            background-color: #8B4513;
+            /* Color café */
             color: white;
             border: none;
             padding: 10px 20px;
             cursor: pointer;
             margin-top: 10px;
         }
+
         #registroForm button:hover {
-            background-color: #A0522D; /* Color café más claro al pasar el mouse */
+            background-color: #A0522D;
+            /* Color café más claro al pasar el mouse */
         }
+
         a {
             display: block;
             text-align: center;
@@ -48,12 +63,111 @@
             color: #8B4513;
             text-decoration: none;
         }
+
         a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar-taller {
+            background-color: #343a40;
+            /* Color de fondo de la barra superior */
+        }
+
+        .navbar-categories {
+            background-color: #6c757d;
+            /* Color de fondo de la barra inferior */
+        }
+
+        .navbar-taller .navbar-brand img {
+            filter: brightness(0) invert(1);
+            /* Invertir colores del logo para que se vea bien sobre fondo oscuro */
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer h5, .footer p, .footer a {
+            color: white;
+        }
+
+        .footer a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
+    <header>
+        <!-- Barra de navegación superior con logo -->
+        <nav class="navbar navbar-taller">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo/logo.png" style="max-width:100%;height:auto;" alt="Logo" width="100">
+                    </a>
+                </div>
+                <div class="search-bar ml-auto d-flex justify-content-between">
+                    <input type="text" placeholder="Buscar...">
+                    <button type="submit" class="ml-2">Buscar</button>
+                </div>
+                <!-- Menú desplegable en la esquina superior derecha -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="registro.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button type="button" class="btn btn-primary">Iniciar sesión</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Categorías -->
+        <nav class="navbar-categories">
+            <div class="container d-flex justify-content-between">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMecanicos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mecánicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMecanicos">
+                        <a class="dropdown-item" href="#">Mecánico automotriz</a>
+                        <a class="dropdown-item" href="#">Experto en equipos eléctricos</a>
+                        <a class="dropdown-item" href="#">Ventas y atención al cliente</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownCategorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categorías
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownCategorias">
+                        <a class="dropdown-item" href="#">Categoría 1</a>
+                        <a class="dropdown-item" href="#">Categoría 2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="contacto.html" role="button" id="dropdownContacto" aria-haspopup="true" aria-expanded="false">
+                        Contacto
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownContacto">
+                        <a class="dropdown-item" href="contacto.html">Información de contacto</a>
+                        <a class="dropdown-item" href="contacto.html">Formulario de contacto</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownSobreNosotros" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sobre nosotros
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownSobreNosotros">
+                        <a class="dropdown-item" href="#">Quiénes somos</a>
+                        <a class="dropdown-item" href="#">Misión y visión</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
     <h1>Formulario de Registro</h1>
     <form id="registroForm">
         <label for="rut">Rut:</label>
@@ -87,5 +201,40 @@
 
     <!-- Enlace hacia index.html -->
     <a href="index.html">Volver a la página principal</a>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contáctanos</h5>
+                    <p>Dirección: Av. Principal 123, Ciudad, País</p>
+                    <p>Teléfono: +1234567890</p>
+                    <p>Email: info@tallermecanico.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces útiles</h5>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
+
 </html>
