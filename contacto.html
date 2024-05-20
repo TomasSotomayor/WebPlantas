@@ -11,6 +11,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-GrE9Uvu7WmVeK4Rj7LbMfm4Y9eHvvJGqeUmPa2KZQJKqCeUbK/m1P4uAu5NjEbx7XgzSdKDqKn1TmVYAwV6f1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-color: #f8f9fa; /* Fondo gris para toda la página */
+        }
+
+        .container-full {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .contact-form {
+            width: 100%;
+            max-width: 600px;
+            background-color: #fff; /* Fondo blanco para el formulario */
+            padding: 40px;
+            border-radius: 8px;
+            border: 2px solid #ddd; /* Añadir borde gris */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            text-align: center; /* Centrar el título */
+        }
+
+        .contact-form .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            display: block;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,8 +62,6 @@
                 </div>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
                 </ul>
                 <div class="search-bar ml-auto d-flex justify-content-between">
                     <input type="text" placeholder="Buscar...">
@@ -89,7 +124,7 @@
             </div>
         </nav>
     </header>
-    <div class="container cont-contact">
+    <div class="container-full">
         <!-- Contenido principal de la página de contacto -->
         <div class="contact-form">
             <h2>Formulario de Contacto</h2>
@@ -115,10 +150,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h3 class="footer-title">Taller Mecánico</h3>
+                    <h3>Taller Mecánico</h3>
                     <p>Av. Industrial 123</p>
-                    <p>Lima, Perú
-                    </p>
+                    <p>Lima, Perú</p>
                 </div>
                 <div class="col-md-6 footer-links">
                     <h3>Enlaces</h3>
@@ -137,4 +171,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
