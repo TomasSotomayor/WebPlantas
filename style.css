@@ -1,5 +1,5 @@
-body {
-    background-color: rgb(190, 190, 190);
+.body {
+    background-color: rgb(255, 240, 190);
 }
 
 .carousel img {
@@ -7,7 +7,7 @@ body {
 }
 
 .carousel-inner {
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(75, 55, 20);
 }
 
 .category {
@@ -22,21 +22,21 @@ body {
 }
 
 .cont-contact {
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(75, 55, 20);
     padding: 0;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(170, 210, 125);
     min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgb(60, 60, 60);
+    box-shadow: 0 8px 16px 0 rgb(75, 55, 20);
     z-index: 1;
 }
 
 .dropdown-content option {
-    color: rgb(60, 60, 60);
+    color: rgb(75, 55, 20);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -47,17 +47,17 @@ body {
 }
 
 .footer {
-    background-color: rgb(60, 60, 60);
-    color: rgb(190,190,190);
+    background-color: rgb(75, 55, 20);
+    color: rgb(170, 210, 125);
 }
 
 /* Estilos para el recuadro de imagen y texto */
 .image-text-box {
-    border: 1px solid rgb(190, 190, 190);
-    color: rgb(190, 190, 190);
+    border: 1px solid rgb(170, 210, 125);
+    color: rgb(170, 210, 125);
     padding: 20px;
     margin-top: 20px;
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(75, 55, 20);
 }
 
 .max-height-700 {
@@ -72,16 +72,16 @@ body {
 }
 
 .navbar-categories {
-    background-color: rgb(190, 190, 190);;
+    background-color: rgb(170, 210, 125);
     /* Color de fondo */
-    border-top: 1px solid rgb(190, 190, 190);;
+    border-top: 1px solid rgb(170, 210, 125);
     /* Borde superior */
     padding: 10px 0;
     /* Espaciado interior */
 }
 
 .navbar-categories a {
-    color: rgb(60, 60, 60);
+    color: rgb(75, 55, 20);
     /* Color del texto */
     padding: 0 10px;
     /* Espaciado horizontal entre elementos */
@@ -94,9 +94,9 @@ body {
 }
 
 .navbar-taller {
-    background-color: rgb(60, 60, 60);
-    color: rgb(190, 190, 190);
-    border-color: rgb(60, 60, 60);
+    background-color: rgb(75, 55, 20);
+    color: rgb(170, 210, 125);
+    border-color: rgb(75, 55, 20);
     padding: 10px 0;
     margin: 0;
     position: fixed;
@@ -107,7 +107,7 @@ body {
 }
 
 .nav-link.dropdown-toggle {
-    color: rgb(190, 190, 190);; /* Cambia el color del texto a blanco */
+    color: rgb(170, 210, 125); /* Cambia el color del texto a blanco */
 }
 
 .overlay-text {
@@ -117,11 +117,11 @@ body {
     transform: translate(-50%, -50%);
     z-index: 1;
     font-weight: bold;
-    color: rgb(60, 60, 60);
+    color: rgb(75, 55, 20);
 }
 
 p {
-    color: rgb(190, 190, 190);
+    color: rgb(170, 210, 125);
     font-style:normal;
 }
 
@@ -130,17 +130,17 @@ p {
     max-height: 400px; /* Altura máxima del contenedor */
     overflow-y: scroll; /* Habilita la barra de desplazamiento vertical */
     overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
-    background-color: rgb(60, 60, 60);
-    color: rgb(190, 190, 190);
-    border: 1px solid rgb(190, 190, 190);; /* Borde del contenedor */
+    background-color: rgb(75, 55, 20);
+    color: rgb(170, 210, 125);
+    border: 1px solid rgb(170, 210, 125); /* Borde del contenedor */
     padding: 50px; /* Espaciado interior del contenedor */
     margin-top: 20px; /* Espaciado superior */
 }
 
 .search-bar button {
     padding: 8px 15px;
-    background-color: rgb(170, 18, 18);
-    color: rgb(190, 190, 190);
+    background-color: rgb(110, 185, 55);
+    color: rgb(255, 240, 190);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -155,4 +155,13 @@ p {
 
 .separator {
     height: 50px; /* Altura del espacio de separación */
+}
+
+.nav-link button {
+    padding: 8px 15px;
+    background-color: rgb(110, 185, 55);
+    color: rgb(255, 240, 190);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
