@@ -26,16 +26,16 @@
                         <img src="img/logo/logo.png" style="max-width:100%;height:auto;" alt="Logo" width="100">
                     </a>
                 </div>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                </ul>
                 <div class="search-bar ml-auto d-flex justify-content-between">
+                    <!-- Añadiendo las clases d-flex y justify-content-between aquí -->
                     <input type="text" placeholder="Buscar...">
                     <button type="submit" class="ml-2">Buscar</button>
+                    <!-- Moviendo el botón de búsqueda aquí y añadiendo la clase ml-2 -->
                 </div>
                 <!-- Menú desplegable en la esquina superior derecha -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
+                        <!-- Cambiar el href a la ruta de registro.html -->
                         <a class="nav-link dropdown-toggle" href="registro.html" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <button type="button" class="btn btn-primary">Iniciar sesión</button>
@@ -44,76 +44,19 @@
                 </ul>
             </div>
         </nav>
+        <nav class="navbar-categories">
+            <div class="container d-flex justify-content-between">
+                <button class="btn" id="btnMecanicos" style="background-color: #70bc34; color: #ffffff;">Maceteros</button>
+<button class="btn" id="btnCategorias" style="background-color: #70bc34; color: #ffffff;">Tierra de hojas</button>
+<button class="btn" id="btnFlores" style="background-color: #70bc34; color: #ffffff;">Flores</button>
+<button class="btn" id="btnArbustos" style="background-color: #70bc34; color: #ffffff;">Arbustos</button>
+<button class="btn" id="btnContacto" onclick="window.location.href='contacto.html'" style="background-color: #70bc34; color: #ffffff;">Contacto</button> </nav>
+ 
         <!-- Categorías -->
 
     
     <!-- Contenido principal de la página de maceteros -->
-    <nav class="navbar-categories">
-        <div class="container d-flex justify-content-between">
-            <div class="dropdown">
-                <a class="dropdown-toggle" href="#" role="button" id="dropdownMecanicos" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Maceteros
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMecanicos">
-                    <!-- Aquí puedes agregar los enlaces del menú desplegable para Mecánicos -->
-                    <a class="dropdown-item" href="#">Mecánico automotriz</a>
-                    <a class="dropdown-item" href="#">Experto en equipos eléctricos</a>
-                    <a class="dropdown-item" href="#">Ventas y atención al cliente</a>
-                    <!-- Agrega más elementos según sea necesario -->
-                </div>
-            </div>
-            <div class="dropdown">
-                <a class="dropdown-toggle" href="#" role="button" id="dropdownCategorias" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Tierra de hojas
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownCategorias">
-                    <!-- Aquí puedes agregar los enlaces del menú desplegable para Categorías -->
-                    <a class="dropdown-item" href="#">Categoría 1</a>
-                    <a class="dropdown-item" href="#">Categoría 2</a>
-                    <!-- Agrega más elementos según sea necesario -->
-                </div>
-            </div>
-            <div class="dropdown">
-                <a class="dropdown-toggle" href="#" role="button" id="dropdownFlores" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Flores
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownFlores">
-                    <!-- Aquí puedes agregar los enlaces del menú desplegable para Flores -->
-                    <a class="dropdown-item" href="#">Quiénes somos</a>
-                    <a class="dropdown-item" href="#">Misión y visión</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a class="dropdown-toggle" href="#" role="button" id="dropdownArbustos" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Arbustos
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownArbustos">
-                    <!-- Aquí puedes agregar los enlaces del menú desplegable para Arbustos -->
-                    <a class="dropdown-item" href="#">Arbusto 1</a>
-                    <a class="dropdown-item" href="#">Arbusto 2</a>
-                    <!-- Agrega más elementos según sea necesario -->
-                </div>
-            </div>
-            <div class="dropdown">
-                <a class="dropdown-toggle" href="contacto.html" role="button" id="dropdownContacto"
-                    aria-haspopup="true" aria-expanded="false">
-                    Contacto
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownContacto">
-                    <!-- Aquí puedes agregar los enlaces del menú desplegable para Contacto -->
-                    <a class="dropdown-item" href="contacto.html">Información de contacto</a>
-                    <a class="dropdown-item" href="contacto.html">Formulario de contacto</a>
-                    <!-- Agrega más elementos según sea necesario -->
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
-
+   
 <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -154,23 +97,21 @@
   </div>
 
   <!-- Después del carrusel, agregar las imágenes -->
+<!-- Después del carrusel, agregar las imágenes -->
 <div class="container">
     <div class="row">
         <!-- Primera fila -->
         <div class="col-md-4">
             <img src="img/flor/flor1.jpeg" class="img-fluid" alt="Imagen 1">
             <h3>Ramo de rosas rojas $29.990.000</h3>
-            <button class="btn btn-success">Comprar</button>
         </div>
         <div class="col-md-4">
             <img src="img/flor/flor2.jpg" class="img-fluid" alt="Imagen 2">
             <h3>Ramo de rosas blancas y flores $27.990</h3>
-            <button class="btn btn-success">Comprar</button>
         </div>
         <div class="col-md-4">
             <img src="img/flor/flor3.jpg" class="img-fluid" alt="Imagen 3">
             <h3>Ramo de rosas rosadas $26.990 </h3>
-            <button class="btn btn-success">Comprar</button>
         </div>
     </div>
     <div class="row">
@@ -178,17 +119,14 @@
         <div class="col-md-4">
             <img src="img/flor/flor4.jpg" class="img-fluid" alt="Imagen 4">
             <h3>Ramo de flores surtidas $25.990</h3>
-            <button class="btn btn-success">Comprar</button>
         </div>
         <div class="col-md-4">
             <img src="img/flor/flor5.jpg" class="img-fluid" alt="Imagen 5">
             <h3>Ramo de rosas $24.990</h3>
-            <button class="btn btn-success">Comprar</button>
         </div>
         <div class="col-md-4">
             <img src="img/flor/flor6.jpg" class="img-fluid" alt="Imagen 6">
             <h3>Ramo de rosas blancas y rojas $39.990</h3>
-            <button class="btn btn-success">Comprar</button>
         </div>
     </div>
 </div>
