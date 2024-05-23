@@ -1,3 +1,7 @@
+.body {
+    background-color: rgb(255, 240, 190);
+}
+
 .carousel img {
     margin: 0 auto;
 }
@@ -18,7 +22,7 @@
 }
 
 .cont-contact {
-    background-color: rgb(75, 55, 20);
+    background-color: rgb(102, 73, 23);
     padding: 0;
 }
 
