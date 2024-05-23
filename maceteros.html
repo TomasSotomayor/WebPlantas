@@ -33,10 +33,13 @@
                 <!-- Menú desplegable en la esquina superior derecha -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-                        <!-- Cambiar el href a la ruta de registro.html -->
-                        <a class="nav-link dropdown-toggle" href="registro.html" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <button type="button" class="btn btn-primary">Iniciar sesión</button>
+                        <a href="registro.html" class="btn" style="background-color: #70bc34; color: #ffffff;">Iniciar Sesion</a>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a href="Index.html" class="btn" style="background-color: #70bc34; color: #ffffff;">Volver Inicio</a>
                         </a>
                     </li>
                 </ul>
@@ -44,12 +47,11 @@
         </nav>
         <nav class="navbar-categories">
             <div class="container d-flex justify-content-between">
-                <a href="arbustos.html" class="btn" style="background-color: #70bc34; color: #ffffff;">Arbustos</a>
-                <a href="tierrahoja.html" class="btn" style="background-color: #70bc34; color: #ffffff;">Tierra de hojas</a>
-                <a href="flores.html" class="btn" style="background-color: #70bc34; color: #ffffff;">Flores</a>
-                <a href="maceteros.html" class="btn" style="background-color: #70bc34; color: #ffffff;">Maceteros</a>
-                <button class="btn" id="btnContacto" onclick="window.location.href='contacto.html'" style="background-color: #70bc34; color: #ffffff;">Contacto</button> </nav>
-                
+                <a href="arbustos.html" class="btn1" style="background-color: #70bc34; color: #ffffff;">Arbustos</a>
+                <a href="tierrahoja.html" class="btn1" style="background-color: #70bc34; color: #ffffff;">Tierra de hojas</a>
+                <a href="flores.html" class="btn1" style="background-color: #70bc34; color: #ffffff;">Flores</a>
+                <a href="maceteros.html" class="btn1"1 style="background-color: #70bc34; color: #ffffff;">Maceteros</a>
+                <button class="btn1" id="btnContacto" onclick="window.location.href='contacto.html'" style="background-color: #70bc34; color: #ffffff;">Contacto</button> </nav>
                 </header>
 
 <div id="carouselExampleCaptions" class="carousel slide">
@@ -132,34 +134,24 @@
 </div>
 
     <!-- Pie de página -->
-    <footer>
-        <div class="container-fluid footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h5>Contáctanos</h5>
-                        <p>Dirección: Av. Principal 123, Ciudad, País</p>
-                        <p>Teléfono: +1234567890</p>
-                        <p>Email: info@tallermecanico.com</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Enlaces útiles</h5>
-                        <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Servicios</a></li>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Síguenos</h5>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                        </ul>
-                    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Aquí puedes agregar información de contacto o enlaces adicionales -->
+                <div class="col-md-6">
+                    <h3>Contacto</h3>
+                    <p>Dirección: Av. Principal 123, Ciudad, País</p>
+                    <p>Teléfono: +1234567890</p>
+                    <p>Email: info@tallermecanico.com</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <!-- Puedes agregar más enlaces aquí -->
+                    </ul>
                 </div>
             </div>
         </div>

@@ -69,34 +69,6 @@
             text-decoration: underline;
         }
 
-        .navbar-taller {
-            background-color: #343a40;
-            /* Color de fondo de la barra superior */
-        }
-
-        .navbar-categories {
-            background-color: #6c757d;
-            /* Color de fondo de la barra inferior */
-        }
-
-        .navbar-taller .navbar-brand img {
-            filter: brightness(0) invert(1);
-            /* Invertir colores del logo para que se vea bien sobre fondo oscuro */
-        }
-
-        .footer {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-        }
-
-        .footer h5, .footer p, .footer a {
-            color: white;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 
@@ -119,10 +91,13 @@
                 <!-- Menú desplegable en la esquina superior derecha -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-                        <!-- Cambiar el href a la ruta de registro.html -->
-                        <a class="nav-link dropdown-toggle" href="registro.html" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <button type="button" class="btn btn-primary">Iniciar sesión</button>
+                        <a href="registro.html" class="btn" style="background-color: #70bc34; color: #ffffff;">Iniciar Sesion</a>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a href="Index.html" class="btn" style="background-color: #70bc34; color: #ffffff;">Volver Inicio</a>
                         </a>
                     </li>
                 </ul>
@@ -130,11 +105,12 @@
         </nav>
         <nav class="navbar-categories">
             <div class="container d-flex justify-content-between">
-                <a href="arbustos.html" class="btn" style="background-color: #70bc34; color: #ffffff;">Arbustos</a>
-                <a href="tierrahoja.html" class="btn" style="background-color: #70bc34; color: #ffffff;">Tierra de hojas</a>
-                <a href="flores.html" class="btn" style="background-color: #70bc34; color: #ffffff;">Flores</a>
-                <a href="maceteros.html" class="btn" style="background-color: #70bc34; color: #ffffff;">Maceteros</a>
-                <button class="btn" id="btnContacto" onclick="window.location.href='contacto.html'" style="background-color: #70bc34; color: #ffffff;">Contacto</button> </nav>
+                <a href="arbustos.html" class="btn1" style="background-color: #70bc34; color: #ffffff;">Arbustos</a>
+                <a href="tierrahoja.html" class="btn1" style="background-color: #70bc34; color: #ffffff;">Tierra de hojas</a>
+                <a href="flores.html" class="btn1" style="background-color: #70bc34; color: #ffffff;">Flores</a>
+                <a href="maceteros.html" class="btn1"1 style="background-color: #70bc34; color: #ffffff;">Maceteros</a>
+                <button class="btn1" id="btnContacto" onclick="window.location.href='contacto.html'" style="background-color: #70bc34; color: #ffffff;">Contacto</button> </nav>
+
                 
                 
     </header>
