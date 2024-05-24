@@ -1,7 +1,3 @@
-.body {
-    background-color: rgb(255, 240, 190);
-}
-
 .carousel img {
     margin: 0 auto;
 }
@@ -140,7 +136,7 @@ p {
 .search-bar button {
     padding: 8px 15px;
     background-color: rgb(110, 185, 55);
-    color: rgb(255, 240, 190);
+    color: rgb(255, 246, 216);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -160,7 +156,7 @@ p {
 .nav-link button {
     padding: 8px 15px;
     background-color: rgb(110, 185, 55);
-    color: rgb(255, 240, 190);
+    color: rgb(255, 246, 216);
     border: none;
     border-radius: 5px;
     cursor: pointer;
