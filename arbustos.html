@@ -54,6 +54,11 @@
                             <a href="Index.html" class="btn" style="background-color: #70bc34; color: rgb(255, 246, 216);">Volver Inicio</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-success ml-2" onclick="verCarrito()" style="background-color: #70bc34; color: rgb(255, 246, 216);">Carrito de Compras</button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -108,6 +113,9 @@
     </div>
     <!-- Contenedor con barra de desplazamiento para imágenes separadas del carrusel -->
 
+    <!-- Separación entre carrusel y las imágenes superiores -->
+    <div class="separator"></div>
+
     <!-- Después del carrusel, agregar las imágenes -->
     <div class="container">
         <div class="row">
@@ -115,17 +123,17 @@
             <div class="col-md-4">
                 <img src="img/arbu/arbu1.jpg" class="img-fluid" alt="Imagen 1">
                 <h3>Arbusto flores amarillas $19.990</h3>
-                <button class="btn btn-success">Comprar</button>
+                <button class="btn btn-success" onclick="agregarAlCarrito(3000)">Comprar</button>
             </div>
             <div class="col-md-4">
                 <img src="img/arbu/arbu2.jpg" class="img-fluid" alt="Imagen 2">
                 <h3>Arbusto sureño $24.990</h3>
-                <button class="btn btn-success">Comprar</button>
+                <button class="btn btn-success" onclick="agregarAlCarrito(3000)">Comprar</button>
             </div>
             <div class="col-md-4">
                 <img src="img/arbu/arbu3.jpg" class="img-fluid" alt="Imagen 3">
                 <h3>Arbusto común $22.990</h3>
-                <button class="btn btn-success">Comprar</button>
+                <button class="btn btn-success" onclick="agregarAlCarrito(3000)">Comprar</button>
             </div>
         </div>
         <div class="row" style="margin-bottom: 20px;">
@@ -133,20 +141,23 @@
             <div class="col-md-4">
                 <img src="img/arbu/arbu4.jpg" class="img-fluid" alt="Imagen 4">
                 <h3>Arbusto común redondo $30.000</h3>
-                <button class="btn btn-success">Comprar</button>
+                <button class="btn btn-success" onclick="agregarAlCarrito(3000)">Comprar</button>
             </div>
             <div class="col-md-4">
                 <img src="img/arbu/arbu5.jpg" class="img-fluid" alt="Imagen 5">
                 <h3>Arbusto del norte $35.990</h3>
-                <button class="btn btn-success">Comprar</button>
+                <button class="btn btn-success" onclick="agregarAlCarrito(3000)">Comprar</button>
             </div>
             <div class="col-md-4">
                 <img src="img/arbu/arbu6.jpg" class="img-fluid" alt="Imagen 6">
                 <h3>Arbusto de california $42.990</h3>
-                <button class="btn btn-success">Comprar</button>
+                <button class="btn btn-success" onclick="agregarAlCarrito(3000)">Comprar</button>
             </div>
         </div>
     </div>
+    
+    <!-- Separación entre las imágenes inferiores y el pie de página -->
+    <div class="separator"></div>
 
     <!-- Pie de página -->
     <footer>
@@ -183,6 +194,31 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Funcionalidad del carrito de compras -->
+    <script>
+        let total = 0;
+        let carrito = [];
+    
+        function agregarAlCarrito(precio) {
+            carrito.push(precio);
+            total += precio;
+            alert(`Producto agregado al carrito. Total a pagar: $${total}`);
+        }
+    
+        function verCarrito() {
+            if (carrito.length === 0) {
+                alert("El carrito de compras está vacío");
+            } else {
+                let mensaje = "Productos en el carrito:\n";
+                carrito.forEach((precio, index) => {
+                    mensaje += `Producto ${index + 1}: $${precio}\n`;
+                });
+                mensaje += `\nTotal a pagar: $${total}`;
+                alert(mensaje);
+            }
+        }
+    </script>
 </body>
 
 </html>

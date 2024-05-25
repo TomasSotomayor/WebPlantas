@@ -54,6 +54,11 @@
                             <a href="index.html" class="btn" style="background-color: #70bc34; color: rgb(255, 246, 216);">Volver Inicio</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-success ml-2" onclick="verCarrito()" style="background-color: #70bc34; color: rgb(255, 246, 216);">Carrito de Compras</button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -210,6 +215,32 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Funcionalidad del carrito de compras -->
+    <script>
+        let total = 0;
+        let carrito = [];
+    
+        function agregarAlCarrito(precio) {
+            carrito.push(precio);
+            total += precio;
+            alert(`Producto agregado al carrito. Total a pagar: $${total}`);
+        }
+    
+        function verCarrito() {
+            if (carrito.length === 0) {
+                alert("El carrito de compras está vacío");
+            } else {
+                let mensaje = "Productos en el carrito:\n";
+                carrito.forEach((precio, index) => {
+                    mensaje += `Producto ${index + 1}: $${precio}\n`;
+                });
+                mensaje += `\nTotal a pagar: $${total}`;
+                alert(mensaje);
+            }
+        }
+    </script>
+    
 </body>
 
 </html>
